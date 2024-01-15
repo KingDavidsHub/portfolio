@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Software Engineer" name="description" />
+    <meta content="software,engineer" name="keywords" />
+    <meta content="website" property="og:type" />
+    <meta content="YourName" property="og:title" />
+    <meta content="assets/images/me.jpg" property="og:image" />
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <!--  FontAwesome from a CDN  -->
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        referrerpolicy="no-referrer" rel="stylesheet" />
+
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <script defer src="assets/js/main.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body class="main-body">
+    <nav class="site-nav">
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="workexperience.html">Work experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-nav-top">
+            <a href="/">
+                <h2 class="text-2xl">David</h2>
+            </a>
+
+            <button class="hamburger-menu" onclick="openNav()">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workexperience.html">Work experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <button onclick="closeNav()" class="close-mobile-nav">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <p>I've had the opportunity to work on projects that ranged from those that never saw the light of day to others that have been utilized by thousands.</p>
+
+        <h2 class="mt-6 text-2xl">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-name="alpha">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/busa_app.jpeg" />
+                <div class="project-description">
+                    <h3>BUSA App</h3>
+                    <p>The Everyday App for Babcock University Students. Available on Play Store and App Store</p>
+                    
+                    <a href="https://apps.apple.com/ng/app/busa-app/id6450320905">View Project</a> 
+                </div>
+            </div>
+            <div class="project-card" data-name="beta">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/ilf_inventory.jpeg" />
+                <div class="project-description">
+                    <h3>Inventory Manager</h3>
+                    <p>Built an Inventory Manager for the entire ILF Consulting Engineers during my intership at the company. It is to be deployed for using within the organization</p>
+                    <a href="https://www.linkedin.com/in/david-ezeh-45116526b/details/projects/">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-name="omega">
+                <img alt="Project placeholder" class="project-img" loading="lazy" src="assets/images/py.png" />
+                <div class="project-description">
+                    <h3>IDE for Python Code</h3>
+                    <p>Contributed to the development of an Integrated Development Environment. It performs Lexical Analysis, Syntax Analysis, Parsing, Debugging, Validation.
+                        View of Github
+                    </p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="date"></span> David Ezeh
+    </footer>
+</body>
+
+</html>
